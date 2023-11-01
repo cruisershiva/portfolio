@@ -54,7 +54,7 @@ const ProjectCard = ({
           <div
               onClick={() => window.open(deploylink, `${deploylink}`)}
               className='mt-2 text-secondary text-[14px] btn'
-            ><button class=" bg-[#001DAB] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            ><button className=" bg-[#001DAB] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
             deployed-link
           </button>
           </div>

@@ -13,6 +13,8 @@ const FeedbackCard = ({
   designation,
   company,
   image,
+  name1,
+  name2
 }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
@@ -26,6 +28,8 @@ const FeedbackCard = ({
         <div className='flex-1 flex flex-col'>
           <p className='text-white font-medium text-[16px]'>
             <span className='blue-text-gradient'>@</span> {name}
+            {name1}
+            {name2}
           </p>
           <p className='mt-1 text-secondary text-[12px]'>
             {designation}{company}
@@ -47,11 +51,11 @@ const Feedbacks = () => {
           <h2 className={styles.sectionHeadText}>Certificates</h2>
         </motion.div>
       </div>
-      <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
+      {/* <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
         {testimonials.map((testimonial, index) => (
-          <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
+          <FeedbackCard index={index} {...testimonial} />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };
