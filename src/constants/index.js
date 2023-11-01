@@ -134,11 +134,11 @@ import {
    {
     testimonial:
       "Python Data Structures University of Michigan",
-    name1: "Coursera",
+    name: "Coursera",
  },{
   testimonial:
     "The Full Stack by Meta",
-  name2: "Coursera",
+  name: "Coursera",
 },
   ];
   
